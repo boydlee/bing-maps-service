@@ -1,7 +1,7 @@
 {
   "name": "bing-maps-service",
-  "version": "0.0.2",
-  "description": "get the current traffic easy for your routes with bing maps. Optionaly post the result automaticly to your openhab item. ",
+  "version": "0.0.3",
+  "description": "get the current traffic easy for your routes with bing maps. Optionaly post the result automaticly to your openhab item.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

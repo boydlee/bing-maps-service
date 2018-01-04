@@ -1,6 +1,7 @@
 # bing-maps-service
 
 ## how it works
+get the current traffic easy for your routes with bing maps. Optionaly post the result automaticly to your openhab item or get the traffic from the service.
 
 ### import modul.
 ```
@@ -54,17 +55,17 @@ mapsService.startService(3002);
 
 ## Web-Service http://localhost:3002/...
 
-### only get route status
+### get the last retrieved traffic for routeid
 maps/route/:routeid/status/
 
-### only get last change time of route
+### get the date of last retrieved traffic
 maps/route/:routeid/lastStateUpdateDateTime/
 
-### Get whole JSON Route
+### get the whole route
 maps/route/:routeid/
 
 ### get running cronjob description list
 maps/running/cronjobs/
 
-### get update for route now. without cronjob
+### triggering a retrieval manually
 maps/route/:routeid/state/update/
