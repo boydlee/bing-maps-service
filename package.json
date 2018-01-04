@@ -1,6 +1,6 @@
 {
   "name": "bing-maps-service",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "get the current traffic easy for your routes with bing maps. Optionaly post the result automaticly to your openhab item.",
   "main": "./lib/index.js",
   "scripts": {
