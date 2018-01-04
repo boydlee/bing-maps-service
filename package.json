@@ -17,6 +17,18 @@
     "service",
     "maps",
     "bing",
-    "royackermann"
-  ]
+    "royackermann",
+    "openhab"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royakaacky/bing-maps-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/royakaacky/bing-maps-service/issues"
+  },
+  "homepage": "https://github.com/royakaacky/bing-maps-service#readme"
 }
