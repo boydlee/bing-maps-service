@@ -9,13 +9,13 @@ var mapsService = require('bing-maps-service');
 ```
 
 ### init config
-Get Bing API Maps Key from https://www.bingmapsportal.com/__
+Get Bing API Maps Key from https://www.bingmapsportal.com/
 
-BingAPIConfig(**Bing-API-Key**);__
+BingAPIConfig(**Bing-API-Key**);
 
-OpenHabConfig(**OpenHab-Rest-URL**);**Optional** can be undefined__
+OpenHabConfig(**OpenHab-Rest-URL**);**Optional** can be undefined
 
-CronConfig(**TimeZone**); https://www.npmjs.com/package/cron__
+CronConfig(**TimeZone**); https://www.npmjs.com/package/cron
 
 
 ```
@@ -25,7 +25,7 @@ mapsService.init(new mapsService.AppConfig(new mapsService.BingAPIConfig('XXXXXX
 ```
 	 
 ### add all your waypoints to the list
-WayPoint(ID, Coordinate, description);__
+WayPoint(ID, Coordinate, description);
 
 ```
 mapsService.addWayPoint(new mapsService.WayPoint(1, '53.5xxxxx,10.0xxxxx', 'home'));
@@ -34,16 +34,16 @@ mapsService.addWayPoint(new mapsService.WayPoint(3, '53.5xxxxx,9.9xxxxx', 'work'
 ```
 
 ### add all your routes to the list
-Route(ID, description, startWayPoint, endWaypoint, viaWaypointList, openHabTextItemName);__
+Route(ID, description, startWayPoint, endWaypoint, viaWaypointList, openHabTextItemName);
 
-viaWaypointList and openHabTextItemName are optional. When the state will be changeg, the new tate will be post to openhab to the openHabTextItemName__
+viaWaypointList and openHabTextItemName are optional. When the state will be changeg, the new tate will be post to openhab to the openHabTextItemName
 
 ```
 mapsService.addRoute(new mapsService.Route(1, 'home > work', 1, 3, [2], 'trafficHomeToWork'));
 ```
 
 ### create a cronjob. See https://www.npmjs.com/package/cron for notation.
-CronJob(ID, cronNotation, description, routeList);__
+CronJob(ID, cronNotation, description, routeList);
 
 ```
 mapsService.createCronJob(new mapsService.CronJob(1, '00 30 07 * * 1-5', 'At morning', [1]));
@@ -51,7 +51,7 @@ mapsService.createCronJob(new mapsService.CronJob(1, '00 30 07 * * 1-5', 'At mor
 
 ### delete a cronjob by the cronJobID
 ```
-mapsService.removeCronJob(1);__
+mapsService.removeCronJob(1);
 
 ```
 
