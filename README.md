@@ -1,7 +1,7 @@
 # bing-maps-service
 
 ## how it works
-get the current traffic easy for your routes with bing maps. Optionaly post the result automaticly to your openhab item or get the traffic from the service.
+get the current traffic easy for defined routes with bing maps. Optionaly post the result automaticly to your openhab item or retrieve the current state from the web-service.
 
 ### import the modul.
 ```
